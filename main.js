@@ -1,75 +1,24 @@
-// console.log(console);
-// let user = [
-//   {
-//     id: 1,
-//     name: "izzatillo",
-//     surname: "Akbarov",
-//   },
-//   {
-//     id: 2,
-//     name: "ummatali",
-//     surname: "turgunov",
-//   },
-// ];
-// console.table(user);
-// /*
-
-// errortype
-// syntsxerror
-// type error
-// reference error
-
-// */
-// let x = 20;
-// function add(x) {
-//   return x * x;
-// }
-// console.log(add(1));
-// let d = 99 * 99;
-// // console.log(d.slice());
-// let son1 = 100;
-// let son2 = 0;
-// console.log(son2 / son1);
-// try {
-//   let x = 20;
-//   console.log(x);
-// } catch (error) {
-//   console.log(error);
-// } finally {
-//   console.log("finish");
-// }
-// masala=======================================
-// countOdds = function (low, high) {
-//   let count = 0;
-//   for (let i = low; i < high; i++) {
-//     if (i % 2 !== 0) {
-//       count++;
-//       console.log(i);
-//     }
-//   }
-//   return count;
-// };
-// console.log(countOdds(10, 20));
-// var checkPerfectNumber = function (num) {
-//   let count = 0;
-//   for (let i = 1; i < value; i++) {
-//     if (value % i == 0) {
-//       count += i;
-//     }
-//   }
-//   return value == count;
-// };
-// console.log(perfectnumber(28));
-let newarr = [];
-
-function findthenumb(number) {
-  let result = number.sort();
-
-  for (let i = 0; i < result.length; i++) {
-    if (result[i] == result[i + 1]) {
-      newarr.push(result[i + 1]);
-    }
-  }
-  return newarr;
-}
-console.log(findthenumb([1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2]));
+// ==========1-masala pasport
+// let regex = /[A-Z][A-Z]\d\d\d\d\d\d\d/gm;
+// let pasportnumber = "A1845035";
+// console.log(regex.test(pasportnumber));
+// ==========2-masala tel nomer mosligi
+// let regex = /\d\d\d-\d\d\d-\d\d\d\d|\(\d\d\d\)\s\d\d\d-\d\d\d\d/gm;
+// let telumb = "(111) 111-1111";
+// console.log(regex.test(telumb));
+// 3 - masala============== url aniqlash
+// let url = "https://google.com";
+// let regex = /^https:\/{2}\w+.\w+|http:\/{2}\w+.\w+/gm;
+// console.log(regex.test(url));
+// 4 - masala============== faqat raqam ligini tekshirish
+// let number = "1234567";
+// let regex = /^\d+/gm;
+// console.log(regex.test(number));
+// 5-masala======================== AorZ
+// let str = "awnivneiniejnviejsZ";
+// let regex = / A\B|Z/;
+// console.log(regex.test(str));
+// 6-masal========================== html tag topish
+// let findhtmtag = "<BR/>";
+// regex = /<\w+><\/\w+>|<\w+\/>/gm;
+// console.log(regex.test(findhtmtag));
