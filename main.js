@@ -19,6 +19,6 @@
 // let regex = / A\B|Z/;
 // console.log(regex.test(str));
 // 6-masal========================== html tag topish
-// let findhtmtag = "<BR/>";
+// let findhtmtag = "<div></div>";
 // regex = /<\w+><\/\w+>|<\w+\/>/gm;
 // console.log(regex.test(findhtmtag));
